@@ -1,0 +1,37 @@
+body {
+  background-color: cyan;
+}
+
+h1 {
+      color: rgba(255,0,0,.7); 
+      font-family: arial;
+      text-align: center;
+     /*  background-color: rgb(0,0,123); */
+}
+
+#about{
+ font-family: arial, sans-serif;
+ font-size: 25px;
+ text-decoration: underline;
+}
+
+.about_text{
+  font-family: arial, sans-serif;
+  text-align: justify;
+  text-indent: 1.5em;
+}
+
+.about_image {
+  height: 100px !important; 
+  margin-left: calc(50% - 10px);
+  /* width: 50px; */
+  /* переопределение размера установленного в html */
+}
+
+.bold {
+  font-weight: bold;
+}
+.line_through{
+  text-decoration: line-through !important;
+
+}

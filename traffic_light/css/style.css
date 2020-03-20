@@ -1,0 +1,65 @@
+#box {
+ background-color: black; 
+ /* max-width: 300px; */ 
+ min-height: 300px;
+ padding: 25px;
+ display: inline-block;
+ /* margin-left: 40px; */ 
+ margin: 25px calc(50% - 153px);
+}
+.red_light, .yellow_light, .green_light { 
+ width: 150px; 
+ height: 150px;
+ border: 3px solid cyan;
+ border-radius: 50%;
+ /*box-shadow: inset 0 0 40px rgba(0,0,0,.7);*/
+ margin: 0 auto; 
+}
+.red_light {
+ background-color: red;
+}
+.yellow_light {
+ background-color: yellow;
+ margin-top: 20px;
+}
+.green_light {
+ background-color: green;
+ margin-top: 20px;
+}
+.red_light:hover, .yellow_light:hover, .green_light:hover {
+ box-shadow: none; 
+ background-color: black;
+}
+.yellow_light:active {
+ box-shadow:none;
+}
+.red_light::before, .yellow_light::before, .green_light::before{
+  color: white;
+  display: inline-block; 
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.red_light::before {
+  /* color: red; */
+  content: "stop";
+}
+.yellow_light::before {
+  /* color: yellow; */
+  content: "wait";
+}
+.green_light::before {
+  color: white;
+  content: "go";
+}
+.green_light:hover::before {
+  color: green;
+  content: "зеленей не будет!";
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
